@@ -1,0 +1,48 @@
+Welcome back. In this video, we're going to continue
+where we left off in our last video, by talking a little bit about
+the evolution of data modeling, and consequently, SQL database
+systems themselves. It's actually a pretty interesting
+history, that really begins in the 1960s as computers were really coming into their
+own as a business and research tool. After this particular lesson, you should
+be able to describe what data modeling is, define a relational database system and discuss advent of the relational
+databases in SQL. Data modelling is what we use to organize
+information for multiple tables and how they relate to each other together. This helps tremendously in providing
+structure to the information in the system. Usually a data model represents
+a business process and it can also help you
+understand a business process. A lot of times you'll work with a business
+person in understanding the data and how it fits together. But at the same time, that business person
+will learn a lot from the data modeller to better understand how their business
+actually works together by seeing the data and
+how it interacts with each other. The thing to remember about data
+models is that it should always represent a real world problem
+as closely as possible. There are couple different
+types of models, and there has been an evolution
+of data models. When I talk about data models here, it's important to realize the difference
+between a model for prediction, which data scientist often build,
+versus a data model, which is really a way that the tables are
+represented and organized in a database. The evolution of data models
+has gone on since the 1960s. There's been hierarchical,
+network, relational, entity, relational semantic, and NoSql. I'm not going to go into great detail
+into all of these different types of data models. If this is interesting to you, I definitely recommend
+you do your own research. It's widely available on the internet and it will only help you in other
+aspects of working with data. I'm just going to briefly talk a little
+bit about the relational and NoSql. The reason I'm talking about the
+relational is this is what we're going to work with a lot when writing SQL queries. The benefits of a relational
+model is that they really simplify the connections between the data. And what it does is easily allow you to
+write queries against it, retrieve it, update and write data to it. NoSQL came onto the scene around 2009,
+it was really part of the Big Data movement that you
+may have heard something about. I think it's important to understand that
+NoSQL is out there especially as you are learning the SQL course. I think it's also important to realize
+the differences between the other data models and NoSQL. Just to touch on SQL in a Big Data world,
+NoSQL is really a mechanism for storage and retrieval where it's not
+modeled in a tabular relational format. NoSQL was really popular when big data and
+unstructured data first came out because you left it unstructured, but
+it's now started to soften a little bit, and more commonly referred
+to as Not Only SQL. This will be one of the discussion
+items in this module. Something I want you to think about and
+research a little bit more is does SQL really have a role still
+in the Big Data world, as new things start to come out
+like NoSQL and unstructured data? That wraps it up for this lesson. You should have a good sense
+of what data modeling is and a basic understanding of
+a relational database. In the next lesson we'll
+discuss how relational and transactional databases differ.

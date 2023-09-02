@@ -1,0 +1,57 @@
+In this video lesson, we're going to go through the backbone of
+retrieving data with the select statement. As we talked about previously, the majority of what data scientists
+are doing with SQL is retrieving data. To be able to do that and get you started, the first statement we are going to
+use is called the SELECT statement. After this lesson, you'll be able to write
+a basic SELECT statement, tell a database what table you want your data FROM, SELECT
+either all or particular columns from a table in a query, and limit the amount
+of data that is returned in a query. With the SELECT statement you're going
+to specify two pieces of information, what you want to select and
+where you want it from. Let's look at the concept
+using an example. So in this example, I'm going to select
+product name, that's a column from the table I want and then I'm going
+to say where I want to get it from. So I want to get it from Products. The output of this is then going to
+look like the column listed below. Which it has a column product name and
+then all of the list of products. We have shampoo, toothpaste,
+deodorant, and toothbrush. If you want to retrieve more than
+a single column from a table, then what you need to do is add the names
+of the individual columns together. But add a comma after
+you add the column name. So in this example, we'll still
+select from the Products table, but will also select the prod_name,
+the prod_id, and the prod_price. You can see below that I've written
+the same query in two different ways. I like to usually write it the second
+way because it helps me make sure I don't forget any commas after I wrote
+a column name that I am selecting. So, each statement is the same. One to me is just a little
+bit easier to read, so that's why I write it the second way. But both statements will
+produce the same results. Now let's say you have a table
+that has 20 columns and you want all of the columns in the table. Instead of having to write out each
+individual column which would take quite a while, there is a wildcard that
+you can use which is the asterisk. So you can put SELECT * and
+then FROM Products and this is going to go ahead and
+grab everything from the Products table, each individual column, and
+put it into your output. So that's the fundamentals
+of using SELECT. Anytime you're retrieving data you
+are going to have a SELECT statement. Because you're retrieving data you need to
+say something as hey, go get me something. This is what SELECT is for. And the FROM that accompanies it will
+always go hand-in-hand because if you're selecting something, you need to tell SQL,
+in the database, where to get it from. A lot of times, though, we may want to
+pull the whole table to get a view of it, to understand what data's in there. So we may do a SELECT star. But if there is something like
+five million records in it and we may just really want
+to get a sample of that. So just to view some of the data in
+table we may need to limit our results. To do this we can SELECT the columns
+we want from the table we want. Then after the FROM statement we're just
+going to put a statement that says limit, and you can put the number. For this I'm going to limit it to five. So I just want to see
+the first five records. Here though I've also listed the
+differences and how this syntax of this is written for different relational
+database management systems. I'm not going to spell it out
+individually for every statement and how it differs from the different systems. But this, as I've mentioned before, I want you to be aware of that
+there are differences in syntax. In the meantime, we're using SQLite. If you understand it's LIMIT 5 and
+then you switch over to a DB2 system, that's still something you can easily
+Google in terms of saying, hey, I'm using a DB2 system, and
+I want to be able to limit my results. What's the syntax to be able to do that? Just know that here, in this example, we're going to use a LIMIT 5
+because we're working with SQLite. But you can see that for Oracle, you can use WHERE the number of row number
+is greater than or equal to a number. Then for
+DB2 you can use FETCH the first five rows. Okay, so that's it for this one. So this video's really gone over
+the backbone of retrieving data. I showed you a couple of examples of
+how to SELECT an individual column, multiple columns, a whole table and
+then also how you can limit your results. These are really the key things you
+need to know in order to understand writing basic queries.

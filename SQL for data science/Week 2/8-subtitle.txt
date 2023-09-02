@@ -1,0 +1,69 @@
+Congratulations, you are almost
+at the end of this module. We've gone over a lot of great information
+that not only will help you filter down your data and be really specific
+about what you're trying to achieve, but also trying to perform some calculations
+and some aggregate functions on your data. In our previous video,
+we went over using aggregate functions, such as average, min, max and sum. However, one of the things
+we didn't over is what you are actually
+aggregating those functions on. In all the examples we
+previously went through, what we had seen was how to pull a single
+field and aggregate on the single field. Well, this is helpful. A lot of times, we'll be looking at
+the total price for something and we may want to look at it for
+customers or for products and we need to choose how are we
+going to aggregate that function. That's what this video was about. And after this lesson,
+you'll be able to perform additional aggregations using GROUP BY and
+HAVING clause. Discuss how NULLs are or aren't affected
+by the GROUP BY and HAVING clauses, and how to use the GROUP BY and ORDER BY
+clauses together to better sort your data. Let's start off with a grouping example. Let's say, for this example, we want to
+know the number of customers we have, but we want to know this by each region. In the last lesson,
+we went over how to count customer IDs and to see our total number of customers. But now, what we're going to do
+is add in that region portion. If we were to just have our select
+statement with select region and then we have our aggregate function
+count customer IDs as total customers from the customers table,
+we're going to get an error return. Because we haven't satisfied, okay, how
+do you want me to count the customer IDs? That's where we add
+this group by a clause. We have now after this from,
+we put the GROUP BY clause and what we want it to group it by. Some important things to
+note about the GROUP BYs is we can group it by multiple columns. We may have more columns than just region. For example, maybe we want to know region,
+city, country. We can list all of those
+in our GROUP BY clause. We will just add a comma after
+every column that we want listed. One of the things to note that's really
+important is all of the fields that your pulling in with the aggregate function
+need to be on your GROUP BY clause, except for the aggregated calculation. Even though you may only want
+to group by that region, it's going to need to be summarized
+by all the other columns as well. So, make sure you're
+listing those out in order. Another think to note is you have
+NULLs in one of your categories such as your region. Let's say, you have the regions of
+California, Idaho, Texas, Nebraska. But then you also have some of
+the other regions that are blank. They have no values. NULL will actually be grouped
+as its own category then. This is helpful, because it helps you make
+sure that you're not missing any data. But it's just something to watch out for
+and look out for. Now that we've started to use aggregate
+functions and started to group them, it's also important to know how filtering
+with the WHERE clause works for some of these aggregates. WHERE does not work for groups,
+because it filters on rows. Therefore, we have to use the HAVING
+clause when filtering with an aggregate function in grouping them. In this example,
+we want the count of orders for customers. But we only want to see
+the total orders for the customers who've had
+more than two orders. So to do this,
+we're going to select our customer IDs, then we're going to count all
+of the records as orders. We're going to get this
+from our orders table. And then since we want to look at
+this by each individual customer, we're going to group
+it by our customer ID. Then to be able to make sure we're
+only selecting those customers who had orders greater than or equal to 2, we'll place our HAVING clause of
+HAVING COUNT greater than or equal to 2. Again, just remember that WHERE
+filters before the data is grouped and then HAVING filters after
+the data is grouped. Rows will be eliminated
+by the WHERE clause and those will be included
+in the GROUP BY clause. This is just important to know when
+you should use WHERE versus HAVING. Both are very powerful. Both have different purposes. Just be sure to note when
+each one is appropriate, so you are not missing any data
+that should be counted. Another thing to note when you're working
+with GROUP BYs is that it's always good practice to use the order by clause. The GROUP BY does not sort
+the data in any fashion. It only groups it together. In our previous examples, we have
+a list of states, a list of regions. It's not going to sort those
+regions in alphabetical order. It's just going to group
+them by different regions. I always recommend using an order
+by in this sort of situation. It just makes it a little easier
+to read through your data. It's just good practice to get into.

@@ -1,0 +1,89 @@
+Welcome, in this video,
+we're going to build off the last one and we're going to go over some more
+advanced filtering techniques. If you've already tried out some of
+the operators in the last lesson, you'll understand that they're very
+powerful and you can do a lot with them. We're just going to expand on those in
+a little bit by going over the IN, OR and NOT operators. After this lesson,
+you'll be able to use the IN and OR operators in detail to filter out your
+data and get the results you want. Differentiate between the use
+of the IN and BETWEEN operators. Discuss the importance of the order of
+operation when using these operators. And explain how and
+when to use the NOT operator. Okay, first let's discuss IN. To use the IN operator, what we are going
+to do is specify a range of conditions. This is similar to BETWEEN, where you
+could say it's between two variables. You can also do a very specific number of
+conditions and have additional conditions. To do this, you're going to enclose
+your values in parentheses, and you're going to have a comma
+delimited list of values. In this example, what we're going
+to do is look for suppliers, but we want an individual list of this. We only want suppliers 9, 10, and 11. Another example would be to have
+suppliers maybe 1, 5, and 10. This is something where BETWEEN
+wouldn't have been helpful, because we aren't looking for
+a range of values. We're looking for specific values. In this example,
+we'll go with our SELECT statement, where we're getting it from, and
+we'll add where SupplierID is IN. And we'll indicate the values 9,
+10, and 11 in this example. You can also add string values. But just remember, those have to be
+added in with single quotes to indicate that they are string values. As you can see by the results returned, what we have is a product ID,
+the unit price for those products. But we've limited our results to
+the suppliers that are 9,10 and 11. Another operator is the OR operator. An important thing to know about this
+is that a database management system will not evaluate the second condition
+if the first condition is met. So you're not going to
+want to use this for something when you want to check for
+both of the values. Remember that you would want to use AND
+in that instance. For this example,
+you're using ProductName. I want to make sure that I am very
+specific that I want Tofu over Konbu. Because once it finds Tofu, it's not
+going to give me the other product names. This is really helpful if
+this is indeed what you want. But if not, just be really specific about
+the order that you're placing the items in in your query. You may be thinking though that IN and
+OR can accomplish the same thing, and they can,
+depending on how things are written. I couldn't have written
+this instead having said, where product name equals Tofu or Konbu. Or if I wanted, both of them to
+choose where product name IN and then in parenthesis, lifts the two values. But there are some benefits to
+using one versus the other. If you're using IN, IN gives you a lot more options
+in how many things you can list. With IN, you can list multiple things. I could have listed ten different
+product names and brought it all back. OR, it's just going to give me two. And IN actually executes faster than OR,
+so that's another benefit to using IN. With IN, you don't have to think about
+the order in which you're placing your different conditions. And another benefit, and
+probably the main benefit of using IN, is that we can use another
+select statement for subqueries. Which is something we'll go
+over in a later lesson, but just keep this in the back
+of your mind for now. Another thing you can use with OR,
+though, is AND. I want to go through this in
+a little bit more detail, because you may get some different
+results if you're not careful. In this example, what I'm looking for is products where
+I have a specific group of suppliers. But I also have a specific unit
+price I want it to be above as well. I could write it as I did
+in the first example. I have my SELECT statement,
+and I have where it's from. And I have where SupplierID equals 9 or
+equals 11, and I also add the unit
+price is greater than 15. What you'll notice though is I'm
+getting some unit prices that are not greater than 15. And so one of the things to
+understand about why this is happening is because SQL is
+processing the OR before the AND. And so one of the ways to limit
+this is to use parentheses. In the next example, you can see I have
+the same exact statement and query. Except I placed parentheses around
+SupplierID, and then have AND UnitPrice. Now you can see I'm actually
+getting all the values I'm wanting. All my UnitPrices are greater than 15, and
+my SupplierID are just those of 9 and 11. An important thing to understand
+here is just the order of operations when using AND
+and the OR operators. You don't have to use a parenthesis, but it's always really good just to
+get in the habit of doing it. This way you're not relying on
+the default order of operations, but you really can never be too sure. So, I would recommend to just
+get in the habit of using the parenthesis when using OR
+and AND together. The last thing we're going to go over for
+filtering is the NOT operator. This is just a way to
+exclude different options. Again, this is a great way when you
+want pretty much everything, but there's maybe just a few
+variables you don't want. So in this example, I'm looking for
+different employees, but I don't want any one of the employees
+who are from London or Seattle. So, to do this, I'll just put,
+where NOT City equals London, and then NOT City equals Seattle. Again, using single quotes to denote
+the strings London and Seattle. And as you can see in our results,
+it returned everything except for those two cities that I had
+specified not to include. So in this video, we've gone over using
+the IN, OR, AND, the NOT operators. Remember, with IN and OR, you can
+accomplish some of the same things. But there are some benefits to using
+IN versus OR in certain cases. Again, if you're using OR
+and AND together, really be careful of your order of
+operations, and use parentheses. And use of the NOT is
+pretty straightforward. So just keep that in your
+toolbox as you're thinking through your query designs.

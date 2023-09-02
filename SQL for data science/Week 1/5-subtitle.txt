@@ -1,0 +1,28 @@
+Okay. Now, let's wrap up our discussion about data models by getting back to talking about the type of data models we'll be working with in this class.
+ After this video, you should be able to define and describe both relational and transactional database models,
+define entities, attributes and relationship, describe and explain the difference between one-to-one, one-to-many and many-to-many relationships,
+ describe the use of a primary key in a database and explain how ER diagram is used to document and illustrate relationships.
+ I want to kick off this video by talking a little bit about relational versus transactional database models.
+ A relational model is a database design that shows the relationships between the different tables and this is really used to optimize querying data, making it easy and intuitive to access the data.
+ Transactional, on the other hand, you can think of as a more operational database. If you are in healthcare,
+ for example, you may have a transactional database that is used to store all the claims information and then this information may not be stored in a great way for querying and using it for analysis. 
+In fact, you may need to take and extract that transactional information from the database and move it into a relational model. Most of what we will be working with in this class is the relational model.
+ The building blocks for this relational model are really three simple things. We have entities which are a person, place,
+ thing or event. These are very distinguishable. They are unique. They are distinct. For example, I could be an entity, Sadie St. Lawrence, and then we have attributes, which are characteristics of this entity. As an entity, 
+it would be myself and then an attribute about me would be that I am female. Then, the third building block of the model is the relationship. This describes the association among different entities
+ There are a few types of relationships in a database and the ones I want to cover are the three shown here: one-to-many, many-to-many and one-to-one. If you think of a one-to-many relationship, this could be one customer that has many invoices.
+ When you think of a many-to-many relationship, this could be an example of many students to many classes. You may have one student who belongs to lots of different classes or you may have a class who has many different students.
+ Then, if you think of a one-to-one relationship, this is a manager to a store. Let's say you have a sporting goods store and each of those stores has only one manager. That would be one example of a one-to-one relationship.
+ To understand these relationships between the tables a lot better, what's often used to depict this are ER diagrams. An ER model then is composed of the entity types and the specific relationships that can exist between these entities.
+ These are usually displayed in a visual format and a relate represents a relationship between the tables. It often helps you to understand and represent a business process and it will show the links between these tables.
+ The links are really important because in a later lesson, we're going to learn how to join these tables together and combine the data. Being able to look at this diagram and see how they relate to each other is really important. What we will use to join these tables together are two things.
+ We can use the primary keys or foreign keys. The primary key is a column or set of columns whose values uniquely identify every row in a table. Then this allows us to take those unique identities and then join it to another table.
+ Foreign keys are similar but in regard that one or more columns can be used together to identify a single row in the table. When we're looking at ER diagrams,
+ which again is one of the ways you will start to think before you do, you'll look at maybe an ER diagram and understand what data elements you are trying to join together and how do you need to get them. 
+But one of the things you need to understand is how to read this. We talked a little bit about relationships and the different relationships between a table.
+ And then, there was a different type of notation that explains the relationships. We have the Chen notation, and there's the Crow's foot notation, and then there's the UML class diagram notation.
+ The Chen notation uses one-to-M for a one-to-many relationship, and M and N for a many-to-many relationship and a one to one for a one-to-one relationship. In Crow's foot notation, we have the train tracks which represent 1 and then the Crow's foot which represents many.
+ And finally, with UML we have a 1.1 which represents the concept of one and 1." which represents the concept of many. Definitely take notes at these. You'll be
+ looking at ER diagrams quite frequently and
+ you'll need to understand these notations when reading ER diagrams so you can understand how you're going to write your query and join the table together or even to find out what's listed in the table. 
+This is really part of that thinking before you start doing' concept I was talking about earlier. Having a good understanding of why the data is structured in a particular way and how to read the ER diagrams will be very helpful to you in writing your queries and ensuring you get accurate results.

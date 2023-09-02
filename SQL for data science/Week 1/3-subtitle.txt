@@ -1,0 +1,70 @@
+Over the next several video lessons, we're going to spend some time talking
+about data models and Diagrams. The reason why this is important is
+because while you may be able to learn SQL, you won't be as effective in writing
+your queries without an understanding of the structure of the data
+that you're querying against. After this particular video, you should
+be able to explain the importance of thinking through the design of a query
+that solves a particular problem before writing a single line of code. Explain the importance of understanding
+how the data in a database relates to one another, and
+describe what a database is at its core. When I first started to learn SQL,
+I took a three-day training class. And this is what I would call a point-inch
+click training class, it's very basic class where you just follow the exercise
+in a book and duplicate what it was doing. It taught me how to write in some
+different select statements to retrieve some data, and
+I was able to perform a few operations. However, when I went off and
+encountered different real world problems, I really had a hard time applying
+what I learned to most situations. It wasn't until I took another class
+that was a bit more theory-based that I began to understand data models,
+Diagrams, and how those interact with SQL. I learned how to apply SQL to that, and that's when my queries
+improved by leaps and bounds. I was then really able to
+apply what I was writing and coding to pretty much any situation. This lesson is so fundamental into
+everything you're going to do after this. I really hope you can take the time
+to do your own research and get interested in this because it's
+going to help you understand queries and SQL in a far greater way than just
+purely studying SQL language itself. I think the the most important thing you
+can learn from this class is a concept I call think before you do. What I mean by this is it's
+easy when you're doing work or we're trying to produce a result or solve
+a problem to just go in and start doing. By that I mean you go in and start to
+write code or maybe start to write some type of email, or you're starting to
+form a model and recreating your data. What I want you to do before you start to
+do that, so before you start to go in and start to write a query, is I want you
+to think about what you're doing. I want you to think about what is
+the problem you're trying to solve. And you need to determine what
+is the data you need to get, and figure out how does the data relate
+to each other, how does it interact? You'll probably also need to think about
+what are some of the problems that you may want to solve with this data and
+need to be aware of. And what are the types of joints or
+business processes in the data modeling? This will really help you because not
+only will you get more accurate results, which is fantastic, and
+what we want and need, but it's going to actually speed up the time
+it takes you to work and get things done. I think we as individuals, and I know I
+definitely fall into this pattern a lot, tend to think that we're getting
+things done by going out and writing things and acting whether it's
+queries or some type of document. But if you actually take the time to
+think about why you're doing what you're doing before you do it, it will actually
+take less time to write your queries. If you really spend some time
+understanding how the data relates to each other, how you're going to join this data
+together, what columns you need, why you need it, this will then in turn speed
+up the process for writing your queries. The SQL language just
+falls into place then. It becomes very simple when you
+have a good understanding of this. If you start to think about what
+you're doing before you do it, you should hopefully
+also have less rework. And you're going to get
+more accurate results, and you're going to get them the first time. And thinking before you do, it's
+important to both understand what you're thinking about and what you're doing. When you're writing queries,
+I've talked a little bit about how this is a translation system for
+you to communicate with the database. It's important to understand
+what a database is. A database is really a container
+that is usually a file or set of files and is used to organize and
+store all of the data. If you think of this in real world terms, It'd be like a filing system that
+has many cabinets along a wall. Within that system,
+within a database, we have tables, these tables are structured lists of
+data elements or specific data type. Going back to our analogy,
+you can think of this as maybe one of the cabinets within
+a whole wall of cabinets. Then if we dive further into the cabinet, into a table,
+what we find is we have columns and rows, which of course is
+what makes up a table. A table is made up of a series of
+individual columns, and then a row and a table is a record. Through tables, rows, and columns, ultimately throughout the database we have
+a mechanism to store and retrieve data. And through data modeling, a way to
+organize and join data together for the purposes of data analysis, and
+we'll discuss that later on in our course.

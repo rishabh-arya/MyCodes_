@@ -1,0 +1,89 @@
+Welcome, in this lesson we're
+going to go over what SQL is, but more particularly how
+data scientists use SQL. That's really what this class is about. I don't only want you to
+understand how to use SQL, but I want you to understand how
+it's used in data science and how that may be different from
+how other people are using SQL. Specifically, after this lesson
+you should be able to define SQL, discuss how SQL differs from
+many other computer languages, explain the three primary ways SQL is
+used with the database, and compare and contrast the roles of a database
+administrator and a data scientist. Along with discussing the importance
+of knowing what SQL syntax you're using in a given database. So let's begin with the acronym SQL and
+what it stands for. This is Structured Query Language. This is the standard language for many relational database management
+systems and data manipulation. SQL is used often to query,
+insert, update, and modify data. At a basic level SQL is a method for communicating between you and
+the database. One of the great things about SQL though
+is that it's made up of statements which are descriptive words. In other words many of the commands
+used in SQL are fairly easy to interpret as compared to
+many other computer languages. This makes SQL, as a language,
+really easy to understand and learn. However, it's important to understand
+that SQL is a non procedural language. That means you wont be able to write
+complete applications with it, but what you can do is interact and
+communicate with data. This makes it relatively simple,
+but also very powerful language. When you think about SQL,
+all you need to think about is data. SQL is all about data. SQL is really used for three things. It's used to read and retrieve data, so data is often stored in a database, and
+you want to retrieve it or read it. And you can use SQL as a means
+to be a translator for that. SQL is also used as a way to
+write data in a database. So if you need to write data in a table or
+insert new data, you can use SQL as a means to do this. And finally, it's used to update and
+insert new data. As you can see,
+SQL has a really simple design, right. It's very contained in what it's able to
+do, which is read, write, and update data. Because of this you will find there are
+a lot of people who are able to use this language. If we look at this graph, what we see is the SQL language ranked
+by the number of programming jobs. This is form Indeed.com in 2016. It ranked SQL as the number one language. There's a lot of jobs out there
+the require the use of SQL, and it's not just for data science. It's important to understand
+how others use SQL and how other people other than data scientist
+and programmers might be using it. There are many, many people who
+might use SQL in their jobs. This includes everything from backend
+developers, QA engineers, data architects, system engineers, obviously data
+scientists, and even data analysts. But the ones I want to talk about
+a little bit more are the DBAs, or database administrators, and
+how they compare to data scientist. A DBA is responsible for managing
+the entire database and guarding it. A data scientist, on the other hand,
+is typically a user of that database. The DBA will be responsible for
+giving permissions to people and determining who has access to what data. They're often times responsible for
+managing the tables and creating them. We're going to go over how to
+create your own tables and insert data into them in a later video. However this is something you'll
+likely have to get the rights to and often from a DBA. The ways the two positions, DBA and
+data scientist, are similar is that they both use SQL to understand
+the data, to query it, and retrieve it. They both write very complex queries, but the main difference is that the data
+scientist is really the end user. Whereas the DBA is the one
+who administers it, governs it, and
+manages the database, as a whole. Data scientists have to
+be able to retrieve data. We know we can't do anything until
+we actually have the data to work with, right. We need a way to go and get that data. SQL is really fundamental in data
+science because you really can't start building any models or doing any
+predictions until you have the data. SQL is the means to go into a database and
+get this data. Data scientists might also use
+this to create their own table or test environment. Let's say you've built a model and
+you want to deploy that, and you want to add it back into the table. You may need to create your own table or
+test environment to add that into. One thing that is not unique with data
+scientist, or other people using SQL, is that you often times are combining
+multiple tables together and a lot of times this leads to a bit more complex
+queries to be written for analysis. Data scientists, though the number
+one way that they're using SQL is really to be able to
+retrieve their data for analysis, they might do a little
+of the analysis using SQL. However, the main thing they're
+using SQL for is for data retrieval. The last thing I want to point out is
+that just because you're learning SQL in the class, the syntax of what you're
+writing may change a little bit based on the relational database
+management system you're using. Again, you can think of SQL as the
+interpreter between you and the database. How you write some of the syntax for
+SQL is going to depend on the relational database management system
+you're interacting with. Extending our analogy you can
+think of this as the accent or maybe as the dialect. SQL is able to translate it for you,
+but sometimes you have to tweak it a little bit based on the database
+management system you're using. Here I've listed just some of the popular
+ones, SQL Server, PostgreSQL, MySQL. In this class we'll be using SQLite. So I'll be teaching you
+this syntax based on that. I want to point out this though because I
+think it's important to understand that if there's something that doesn't work
+correctly when you copy data from this class into another application you are
+using at work, definitely check the type of relational database management
+system you're using and see if that makes a difference. I'll talk about this some
+more in an upcoming video, including some of the ways to figure
+out what those differences might be. Okay, that's it for this lesson. And you should be able to tell
+others what SQL stands for and discuss how it difference from
+other common computer languages. You should also be able to explain a few
+ways that SQL is used in a database. Understand the roles of a database
+administrator and a data scientist, and be able to explain the importance of
+knowing the SQL syntax you're using within a database management system.

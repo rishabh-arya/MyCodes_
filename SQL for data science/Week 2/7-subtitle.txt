@@ -1,0 +1,89 @@
+Are we having fun yet? [LAUGH] I know I am, but
+it's going to get even more fun in this lesson because it's time
+to really take a deep dive into data analysis by going over some
+of the aggregate functions found in SQL. Aggregate functions provide various
+ways to summarize your data, which in turn really helps you to
+analyze your data and see what you have. In this lesson you'll learn how to
+describe the various aggregate functions and what they do. Explain how each of the aggregate
+functions can help you analyze data. Use various aggregate
+functions including AVERAGE, COUNT, MIN, MAX, and
+SUM to summarize and analyze data. And describe the use DISTINCT function and
+how it can useful. Aggregate functions are used for
+all sorts of things and they can be really helpful
+in finding the highest or lowest values, total number of records,
+average value, etc. It really builds off of some of those math
+operators that we previously talked about. Except they're just
+pre-built in functions, so it makes it super easy to start to
+aggregate and summarize some of your data. A lot of times in descriptive
+statistics we are getting to know and understand our data. We're going to use a lot of these
+different types of aggregate functions. The aggregate functions we
+can use are AVG, COUNT, MIN, MAX, and SUM and
+all of these are pretty self explanatory. As you can get the average of column
+values, count the number of values, find the minimum and maximum value in a column,
+and then sum the total column values. In this example, for
+average we'll use our select statement. And then just as we will list out our
+columns that we want to retrieve, you're going to list it out as
+a column you want to retrieve. But before you put your column,
+you're going to go in and add the function that you want. In this case, I have AVG because
+I want the average unit price. For this statement I'm also going to
+add my alias to rename this column because I'm not just going
+to pull in the unit price. It's now the average of the unit price,
+and this is from the products table. Something to note here is
+that rows containing no or null values will be ignored
+by the average function. Moving on, the COUNT function is really
+helpful when we want to get an idea of the contents of a table. This is just helpful to understand
+how many records are in a table, or how many records contain information. If you do a COUNT with a star and
+brackets, you're going to count
+all the rows in a table. And this could be all the values or no values because this is just
+counting any row in a table. You could also then count an individual
+column just by selecting count and then the column name. This will then count the rows for
+that specific column and would ignore the null values. Below we have two different examples. One where we're looking for
+all the records from the customer table. And then one where we're just counting
+the customer IDs from the customers table. Here we may get the same results or we may get different results if there
+are no values in the customer ID column. Just kind of a note the differences there. You of course could just count one of
+the columns to get an overall view of the table. But then you're missing out on
+any null values that might not be giving you a clear picture
+of the full table. If you really want an overview of
+the table, use the SELECT star count. Okay, another aggregate function
+we have is the MIN and MAX. This is really great. Again, you're starting
+to understand your data. You just got a new table, you want to
+see what some of this data looks like. It's always great to get
+a range of your data. Pulling something like
+what's the minimum value, what's the maximum value, starts to give
+you an idea of what are the distributions. And there are potential really
+high outliers in this data. And all of this can be
+done on the database. It's really helpful to
+do this if possible. To use this properly, we're going to
+put our function in a parenthesis. We're going to put the column
+that we wanted to work on, so we have SELECT MAX(UnitPrice). I always do an alias because otherwise
+the column name will just come through as blank. And so it's helpful to remember what
+I was actually trying to do here. Another thing to note is that again
+the null values will be ignored with the MIN and MAX functions. If you are just using this function, just be aware that when the null values
+are ignored and when they aren't. Finally, we have the SUM
+aggregate function. Again, you can use this
+in a similar fashion as with the other aggregate functions. Go ahead and state SUM,
+the column that you want to sum, and what you want it named as, and
+then where you want it from. For this we can also add these
+together with some of your math calculation functions. For this example, I want to look at
+the unit price in units in stock. I want to get a total for that but
+I also want to add all of those together. Now I have the total price for all of
+the products with the unit price and the units in stock. Now you can see how with the math
+operators in some of these aggregate function you can really start to get
+a better understanding of your data, and now even start to do some analysis and
+enter your own data. Before we conclude,
+I want to go over one more important thing to use with aggregate functions
+which is the word, distinct. If the word distinct isn't
+specific in a statement, SQL will always assume
+you want all the data. For example, you may have a customer
+who's in a table multiple times. If you're simply doing a count on your
+customer IDs and you don't distinguish to count just the distinct customer IDs, you
+may be getting duplicate records in there. And this is really helpful to run queries
+where you're counting distinct and to see where there even might be some
+potential duplicates in a column. There are some things to keep in
+mind when using DISTINCT with our aggregate function of count. You can't use DISTINCT on on
+the COUNT function with the star. Just keep this in mind, not only for
+when and where you can use DISTINCT, but also to think through when you want
+to use DISTINCT and when you don't. Again, you're usually trying to understand
+your data before you're analyzing it. So performing some of these
+sorts of queries using aggregate functions will help you figure out what
+you're dealing with in a database.

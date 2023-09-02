@@ -1,0 +1,109 @@
+So we've learned all about the basics of
+actually acquiring data from a table using select and from commands. But that's only part of the story, because
+most of the databases contain thousands or even millions of records. Often we don't want to
+look at all that data. I know I don't. In this lesson,
+we're going to go over filtering with SQL. Filtering is extremely important because
+it allows us to narrow the data we want to retrieve. Filtering is also used when you're
+doing analysis to get very specific about the data you want to
+analyze as part of your model. After you've watched this video,
+you should be able to describe the basics of filtering your data, use the where
+clause with common operators, use the between clause and
+explain the concept of a null value. All right, we have a lot to cover,
+so let's begin. Filtering SQL is important to
+understand because we have a couple of options as to where we can filter
+down our data and get specific. But there's some huge benefits when
+we're doing it directly with SQL instead of relying on the client
+application to do it. First of all,
+when we filter our data down, it will often reduce the number
+of records we're retrieving. Instead of just going and grabbing a whole
+table and pulling every column and row from it, we can get really specific about the data
+we want to obtain from that table. And subsequently, that reduces how much
+data we're pulling in from the system. Reducing the amount of data you're
+analyzing will, of course, speed up the query performance, which, in turn,
+will speed up our overall processing. It also helps when we add
+the filtering at the database level because this reduces the strain on the
+client-side of the application which will also allow it to run better. Before you go and
+pull a whole table into a program like our to start doing analysis, filter that
+data down before you even pull it. Means you won't have as much data to
+churn through when you're analyzing it. Again, we want to try and
+push as many filters down as possible because databases are really
+optimized to do this. It also then helps to make sure that we're
+not straining our client application, and ultimately ensures we're getting
+the data we want and need. To do this we use what's
+called the where clause. And the where clause comes after
+we use our select and from. You have to select your columns and then choose which table
+you want the columns from. And then you add where along with
+your column name operator value. There is a couple different
+operators that you could use. You could use equals, not equals,
+greater than, less then, greater than or equal to, less than or
+equal to, between, and is null. We're going to go through
+a couple of applications and examples of each of these operators. In the first example, we're going to
+filter just on a single condition. For this, again, we have select
+our ProductName, our UnitPrice, our SupplierIDs. But we want to just look at
+the suppliers and the UnitPrice for the product named tofu. So after the from, we're going to
+add where product name equals, and then we enter what we want it to equal. In this case, tofu is a string variable. So we're going to put the string
+in individual quotes. As you can see, the result is a single
+line where the product name is tofu. And then we also have the unit price and
+supplier ID. For that, in this example, if we had
+multiple records that were named tofu, we would see more rows. But in this example, we happen to have
+just one record which is named tofu. So we only see the one row. Another way to do this is to
+filter on a single value. In the last example we had a string. So a single condition. But maybe we want to look at products
+whose prices are greater than or equal to 75. So on this example, we'll take
+the columns that we're interested in and we'll get the data from
+the product tables. But this time we're going to look
+at the records where the unit price is greater than or equal to 75. As you can see now,
+we get multiple records retrieved. But if you look at the unit price,
+all of the records for this unit price is greater than or
+over a value of 75. One tip like to do is maybe I didn't
+actually need the unit price in my data. I just want to filter out those
+records that are greater than 75. Before I run this, I didn't need to pull
+on the unit price as one of the columns. But what I like to do is leave it in there
+to include it just for a little while. Just to make sure I'm really
+getting what I think I'm getting. When you're just starting to
+write queries and testing them, I would leave in some of the columns for
+what you're filtering on in there. But if you don't need it, then you
+definitely don't need to pull it in. Another way we can filter is
+by looking for non-matches. Maybe you don't have just a list of
+one product that you want to go after, such as tofu,
+maybe you have a whole bunch of products. But you know that you don't want
+a particular single product, or a couple of products. It would be easy just to say
+give me everything except blank. Again, we're going to look at products and
+their prices from different suppliers. But for this query, we don't want to include a specific
+product name, Alice Mutton. So basically,
+we want to pull all records except that. We'll add our operator,
+in this case, not equals. And then because this is a string value, we'll add those single quotes around
+the string we want to filter out. What's really handy though,
+is you can filter for a range of values. This is a little bit different
+because it doesn't have an operator. What it does use is between and, and. It's still the same format, but this way
+we can filter in where the units and stock are between 15 and 80. And so it really rolls off
+the tongue in the way you write it because you're going to put the column
+in that you're interested in, units and stock, and then between
+the two numbers that you're looking for. So, to do this,
+I just want to put between 15, and I want to make sure to include and
+before the next condition. Here, you can see I poll in the units,
+and stock, and you can see the result for that are all between 15 and 80. Another example we'll go through
+is filtering for null value. In this example, what we're doing is
+filtering for something that is null. It's really important, again, to remember
+the difference between nulls and zeroes. A null is very different than
+having a price that is zero. A null means that there is
+actually no data in this column. If you want to look at something
+where you know the price is 0 or it is an empty string, then you need
+to type that in as your condition. If you want to look for something
+where there is just no information for that column, that's where you
+would want to simply use is null. Here we're going to use where
+the product name is null. Maybe we're doing some profiling
+of our data and we want to see, are there any records
+missing from this column? This a great way just to check and see. Does the column representing the product
+names have some type of information for every record? So for this query, I'm asking for the records that have null
+value of the product name. Because I get no values
+returned with this search, that means that all the product
+names have some value in them. Again, remember the difference between no
+and whether there is actually a zero or an empty stream. All right, so in conclusion, remember the
+different operators that we have for this. Equals, not equals, greater than,
+less than, greater than or equal to, less than or equal to,
+along with between, and is null. Remember also to always
+use your where clause, and then feel free to get creative. This is something I really think forms
+the backbone of many SQL statements. For many queries,
+you'll have the select from. And then more often than not, you'll be
+filtering down with the where clause in some regard to limit the number
+of records returned.

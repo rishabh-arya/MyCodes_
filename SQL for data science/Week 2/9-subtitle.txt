@@ -1,0 +1,47 @@
+Welcome back and congratulations,
+you're finished with this module. We've really talked about a lot
+of different things in regards to filtering down our data,
+being specific about what we are after. We've also started to look at some math
+functions, some aggregate functions, and some calculations. And then, we're wrapping up by thinking
+about how to group your data and filter it out. Now, you have a lot of great
+statement at your disposal and you can really use these to
+write some powerful queries. As you start to write more and more complex queries,
+always be sure to test out along the way. Especially, as you're doing some of
+these aggregates in the beginning. Test to see how many
+records you had before and then how many records you had
+after you're done aggregating. Really make sure that your
+understanding what you're doing. In SQL it 's very easy to get results,
+so just because you can get data back, doesn't mean it's the data
+you intended to get to. Just remember some of the pointers
+to why we filter in SQL before we obtain the data versus,
+filtering out on the client application. Again, a lot of times we're doing
+this to increase our performance so we're not processing through as
+much data on the client side. But it also, then,
+helps us to understand our data. Getting really specific about
+the values that we're looking for, finding a range of values,
+finding blank values. This helps us in our
+descriptive statistics. Some of those aggregate functions,
+such as looking at the min, max of things. And this can really help us understand
+our data and what's going on. Now, that you have learned a few different
+clauses that you can use with you SELECT statement, I think it's good, just to keep
+in reference, the formal structure of it. Prior to this, we talked about selecting
+data and getting it from somewhere. Now, we've added up a couple
+of different clauses, and it's important to remember
+the order that these go in. And I've just listed these out in
+order here, starting with the SELECT. So again, we're always going to have
+that SELECT statement at the beginning. We're going to say where we're getting
+it from and then we're going to be using our WHERE clause if we need to
+do any row level filtering. Again, if we have an aggregate
+function in our SELECT statement, we'll want to make sure we're
+including that GROUP BY clause. Then, if we have the GROUP BY, we may want
+to do some grouping and level filtering. So we'll be needing that HAVING clause. ORDER BY is always our last
+thing that we put in our query. And this is just going to sort the order
+of things in any way that you determine. You can see, on the right hand side,
+I've listed out whether or not the statement is required. Some of these you can see,
+they aren't always required. This just gives you a really
+nice structured outline for a lot of the common statements and
+clauses you'll be using and the order that they should be
+in when writing SQL statements. Now, at this point,
+you should have plenty to get you started. I hope you have a lot of fun playing
+around with some of these different aggregate functions, filtering down
+your data, and seeing how it changes. All right, go out there and give it a try.

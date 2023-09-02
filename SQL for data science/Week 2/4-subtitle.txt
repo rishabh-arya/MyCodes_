@@ -1,0 +1,83 @@
+Have you ever come across data where
+you knew either the beginning or end of something, but
+didn't know the rest of it? Or maybe you know that something is like
+something else, but slightly different. Well, in continuing our discussion with
+filtering in this module, we are going to take the next step and discuss the use
+of the wildcards and the LIKE operator. After this video lesson, you should be
+able to explain the concept of wildcards, including their advantages and
+disadvantages, when they are used, and when they are useful. Describe how to use the LIKE
+operator with wildcards. And write out the appropriate
+syntax when using wildcards. All right, so the use of wildcards
+is a really powerful technique, especially when it comes to
+string values or text data. As data scientists,
+we often analyze these values or maybe just pull a portion of
+the information from a column or field. Wildcards get used frequently when
+doing different types of analysis and retrieving your data. A wildcard is a special character
+used to match parts of a value. What you're doing is searching for
+a pattern made up of literal text. The beginning of a phrase,
+ending of a phrase, and you're able to pull data for
+that based on your search conditions. One of the things you'll use though
+with this is the LIKE operator. LIKE is actually technically a predicate,
+not an operator. But oftentimes,
+it just gets referred to as an operator. So that's what we'll refer to as here. A thing to know with a LIKE
+is that it can be used for string variables and non-text data types. So these wildcards cannot be used for
+numerical data. Again though, this is really helpful for data scientists as you're working with
+strings and you're working with text data. Because at some point, you'll probably
+want to do some text analysis and you'll want to pare down the columns or
+the data you're retrieving in an easy way. Wildcards allow you to do just this. To use the wildcard, what you'll
+do is add a percent sign before, after, or in the middle of
+what you're searching for. So, I love pizza,
+I'm always looking for good pizza. So maybe in my data set, I want to
+find things with the word pizza in it. There's a lot of ways I can search for
+this. If I add the wildcard
+before the word pizza, I'm going to find anything or
+any phrase that ends with the word pizza. If I add the wildcard
+after the word pizza, it's going to grab anything
+after the word pizza. So I'm just pizza crazy and
+want pizza in the middle of everything, then I'll add the wildcards
+on both sides of the word. Wildcards become helpful because
+a lot of times you'll see data that has just the whole
+string of information in it. In the Northwind database, some of the product descriptions will
+tell you how many ounces a unit holds, and then it goes on to tell you
+how many packages are in the box. But maybe you just want to
+know the word package or box from the list of the string variables. This is a really great way to start
+to parse out that information that may be hard to retrieve. It can also help in decluttering things or
+just doing a general overall search. Another way you can use a wildcard
+is in the middle of two letters. I may search for something that
+starts with S and ends with E. And this then in turn would grab my name, Sadie, because my name starts with S and
+ends with E. It's not common, but may be helpful if
+you're looking for say, different emails. In this example, I'm looking for
+maybe somebody whose emails are Tom or I'm just interested in all
+the emails that start with T. I'm going to put t,
+then I'm going to put my wildcard. And maybe I'm particularly interested
+in those emails that are @gmail.com. In these records, I'm specifically
+searching for all gmail addresses. And so this is one example where you
+would use a wildcard right in the middle, where it starts with a phrase and
+ends with a phrase. It's important to note that the wildcards
+will not match null values. Again, remember nulls are really
+no value in the column. You wouldn't be able to use
+a wildcard in those cases. Some of the ways you use wildcards. And I won't go into too much detail here, because it really depends on your
+relational database management system. But you can use wildcards
+with underscores. In this example, we're going to have WHERE
+size is LIKE, and then underscore pizza. This is going to produce an output,
+where it ends in the word pizza and then it brings everything before that. This isn't supported by DB2,
+which is a pretty popular system. But I think it's important to know
+because most other systems support it. You can do it in another example where
+you just have your wildcard pizza and it's going to produce the same results. Another one is to use brackets to specify
+a character in a specific location within a string. I won't go into a lot of detail
+about this, because in this class, we're using SQLite, and brackets used in
+this manner are not supported by SQLite. But just be aware that there
+are different ways to use wildcards in different database management systems. Again, it's really important to rely on
+your relational database management system and what wildcards it uses. But again, the concept behind wildcards
+are all the same, in all systems. Now, there are some downsides
+to using wildcards. One, queries using wildcards
+take a little bit longer to run. If you can use another operator such as
+equals, greater than, or less than to achieve your same results, you'll get a
+lot better performance out of your system. However, wildcards are really helpful
+because they can help you find a wider range of things, such as with
+a phrase that ends in something or starts with something. Sometimes, they're
+the only option you have. But if it is possible,
+use another operator. And finally, be careful on where
+you're putting your wildcards. Just remember that I always recommend when
+you're starting a new query to start slow, build upon it, and do some simple testing
+before you add it into your larger query.

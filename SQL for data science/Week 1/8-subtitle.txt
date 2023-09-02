@@ -1,0 +1,58 @@
+So in our last lesson, we went over how
+to create tables in a database using SQL. Another option we have is to create
+a copy, essentially of another table or pull a subset from another table. We can create a whole table from this, or we can create what is
+called a temporary table. And that's what we're going to
+go over in this video. After this lesson, you should be
+able to create temporary tables, describe the limitations of temporary
+tables and discuss some strategies for researching syntax for
+particular database management systems. First of all, the most important thing
+to know about these temporary tables is that these will be deleted when
+the current client session is terminated. That's why they're
+called temporary tables. However, these are really good to use
+because they are lot faster than creating a real table. So if you have complex queries and
+you want to simplify it a bit by creating a subset and
+then joining to that subset and driving a new calculation from that,
+then temporary tables are a great option. For this, we use the statement
+create temporary table. Then we put the name of the temporary
+table we want to create. Then this I'm pulling in as
+a subset from another table. I'm going to say add, then in my brackets, I'm going to put my select statement
+of where I want to get this from. In this case, I'm pulling a subset
+of data from my shoes table. Right here I am just creating a temporary
+table that is the shoe type sandals. Now I create an individual table which
+is just going to have the shoes that are sandals. As mentioned before, the way you create
+tables, update them and insert them is heavily dependent on the relational
+database management system you're using. In this class we're using SQLite. However, you do not have
+write privileges to this. You won't be able to
+write any data to this. But I think it's important to realize
+you need to look up this information on your own based on
+the company you're at, and the type of relational database management
+system they're using at that time. This graph depicts
+the flow of what you need, in order to create a temporary table. So as you can see,
+there's a little bit more detail here. What I would highly recommend is looking
+up the Relational Database Management System you're using, and then finding the
+syntax detail for how to create the Table, with the Relational Database
+Management System you're using. It's really great if you can
+become your own researcher and trouble shooter when working with SQL. The key is to really never stop learning,
+learning how to optimize your queries or how to work with relational
+database management systems. For this, I really want to teach you
+the core basics and the fundamentals so that you would know how to think
+logically about these problems and work through them. At the end of the day,
+you're going to be your own best teacher. For this, I recommend googling or
+using stackoverflow, which is a site dedicated to asking and
+answering coding questions. You'll be able to get a lot
+of great information there. As this language is dependent on the
+database management system you're using, make sure that when you're typing or
+researching these items, that you're typing the name of
+the database management system in as well. This will be helpful because you may find
+the solution to your problem implemented. There may be different syntax based on
+the relational database management system your using. I'd like to challenge you to research
+some of this things on your own based on the relational database management
+system you're using at work. Go ahead and look up the statements for
+updating tables and deleting tables and see if there's anything related to the
+database management system you're using. So to wrap up, in this lesson we learned
+how to create temporary tables and write data to them. We also covered some limitations
+of using temporary tables. Chiefly, that they are temporary,
+and we talked about some strategies to research
+different syntax for SQL statements. I really encourage you to do
+some research in this regard. You will always learn a lot when you go
+out and explore these topics on your own.

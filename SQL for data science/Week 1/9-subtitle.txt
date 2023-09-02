@@ -1,0 +1,70 @@
+Hi there. So as you can probably guess,
+SQL code can get pretty messy. While we've only focused
+on simple queries so far, most queries are multiple and
+often many lines long. Sometimes it can be difficult for you or
+someone else looking at your code to understand what's going on
+in the design of the query. So in this video, we're going to talk
+about adding comments to our SQL code in order to help shed light on what
+we're trying to do with our code. Adding comments is important not
+only because it makes your queries easy to understand,
+both for you and for others. It's also going to help with
+troubleshooting your code and making your code easier to share overall. After this lesson, you should be able to
+discuss the importance of writing comments as a part of your code. Describe several comment syntaxes
+that can be used in SQL, and, of course,
+actually write comments in your code. Let's begin. If you've written in any
+other programming language, you know that comments are helpful
+when you've written some code and you've gone away from it for a while and
+when you come back to work on it again. You want to understand
+what you were doing. The same thing applies here. You may write some code to retrieve some
+data, go back, work on it for a while, and then decide to come back and modify your
+query for the data you want to retrieve. Just adding a few helpful comments
+here and there is just going to make it far easier to understand what you
+were doing and why you were doing it. But you can also use the comments to
+mute the expression of some code, frequently referred to
+as commenting out code. This technique helps you troubleshoot some
+of the issues you have with your query a little bit better. You can effectively get rid of parts of
+your query without actually getting rid of the statements themselves. And then bring them back in one by one
+to see where your query goes awry. So there are two ways to add comments. One is by adding single line comments and the other is by adding
+a section of comments. In this, I'm selecting shoe_id,
+brand_id, my shoe_name from shoes. And I just want to
+comment out the brand_id. I don't need it here. So I'm going to add two dashes, and
+it's just going to remove that whole line. When I run this code block, that's what's
+going to happen is I'm just going to get the return for
+the shoe_id and the shoe_name. And the next example that I've done
+is comment out a section of the code. As you can see, to do this,
+I've used a combination of a backslash and an asterisk. What this is effectively saying is, don't run anything between the two
+backslashes and the asterisk. This you can use for
+a large portion of queries. And it becomes really
+helpful when you want to just narrow down the one individual
+line that you want to run. Use these before your SELECT statement
+to denote what you're doing. Also, use these to cross out
+portions of what you're doing and to troubleshoot different
+aspects of your code. At the same time,
+as helpful as comments are, you can definitely have comments go wrong. So it's important to understand how
+adding comments in the right way can be helpful to you in understanding your code. But sometimes, comments can be overly
+done and can definitely confuse you. I think it's good to realize keeping your
+code organized, keeping it in a really standard format is just going to
+make it a lot easier to read. And then add comments where it doesn't
+follow the normal flow or syntax, or just little points that you may
+want to read or note for later. Here are a couple examples where there are
+too many comments and comments gone wrong. And this is another example where the code
+is just much more simple, easy to read. And you can definitely follow what's
+happening by looking at it and following the logical pattern
+through reading each one. But you can also, at the same time,
+see where comments are placed really eloquently at just the right place
+to help you understand what's going on. Now, one last point that isn't really
+part of comments discussion, but something you may find helpful in general
+is using a source code or text editor. A lot of times, the relational database
+management system you're using will have somewhere to input your queries. But sometimes, just writing them
+outside in a source code editor so that you can modify them and
+save them is really helpful. One I use all the time and
+always recommend is Notepad++. It might be something you're
+interested in downloading and using to start writing your queries. It can also help a lot with automatically
+color highlighting your different statements, and
+can help you with some of the indention to make sure you're writing your code and
+it's nice and clean. Okay, that wraps it up for
+our discussion on comments. Now you should be able to start
+writing comments in your SQL code to help yourself and
+others understand your design intentions. I heartily recommend you get in the habit
+of commenting in all your coding now, as you're just beginning with SQL. So it's something that becomes second
+nature to you as you work on more complex queries going forward.
